@@ -55,6 +55,10 @@ export const register = async (req, res, next) => {
         return res.status(200).json({
           status: "success",
           message: "Token updated successfully.",
+          data:{
+            walletAddress: existingUser.walletAddress,
+            token: existingUser.token,
+          }
         });
       }
     } catch (error) {
