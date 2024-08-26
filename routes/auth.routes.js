@@ -1,7 +1,8 @@
 import express from "express";
-import {register} from "../controllers/auth.controllers.js";
+import {register, updateToken} from "../controllers/auth.controllers.js";
 const router = express.Router();
 
 router.post("/register", register);
+router.post("/updateToken", updateToken);
 
 export default router;
