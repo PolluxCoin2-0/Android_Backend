@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define a simple route
 app.get("/", (req, res) => {
-  res.send("Hello, This is QuickSpot backend...");
+  res.send("Hello, This is android backend...");
 });
 
 // Use routes from the routes directory
